@@ -8,9 +8,11 @@ export class GameResizeWindow extends Component {
         height: 1398,
     };
 
+    private timeout: any;
+
     protected onLoad(): void {
         this.adjustResolution();
-        this.setupResizeListener();
+        window.addEventListener("resize", this.debouncedResizeWindow);
     }
 
     protected onDestroy(): void {
@@ -34,25 +36,16 @@ export class GameResizeWindow extends Component {
     }
 
     debounce(func: any, wait: number) {
-        let timeout: any;
         return (...args: any[]) => {
-            clearTimeout(timeout);
-            timeout = setTimeout(() => func.apply(this, args), wait);
+            this.timeout && clearTimeout(this.timeout);
+            this.timeout = setTimeout(() => func.apply(this, args), wait);
         };
     }
 
     private resizeWindow() {
-        setTimeout(() => {
-            this.adjustResolution();
-        }, 100);
+        this.adjustResolution();
     }
 
-    private debouncedResizeWindow() {
-        this.debounce(this.resizeWindow, 100);
-    }
+    private debouncedResizeWindow = this.debounce(this.resizeWindow, 100);
 
-    private setupResizeListener() {
-        // Listen for window resize events
-        window.addEventListener("resize", this.debouncedResizeWindow);
-    }
 }
