@@ -1,30 +1,22 @@
 {
     "lobbyNames": {
         "en": "Pickleball\nLove Story",
-        "es": null,
-        "fil_ph": "Pickleball\nLove Story",
-        "id": null,
-        "ja": null,
-        "ko": null,
-        "pt_br": "Pickleball\nLove Story",
-        "th": null,
-        "tr": null,
+        "id": "Pickleball\nKisah Cinta",
+        "th": "พิกเคิลบอล\nเรื่องราวความรัก",
         "vi": "Chuyện Tình\nPickleball",
-        "zh_cn": null,
-        "zh_tw": null
+        "zh_cn": "匹克球\n爱情故事",
+        "zh_tw": "匹克球\n愛情故事",
+        "ja": "ピックルボール\nラブストーリー",
+        "es": "Pickleball\nHistoria de amor"
     },
     "gameNames": {
         "en": "Pickleball Love Story",
-        "es": null,
-        "fil_ph": "Pickleball Love Story",
-        "id": null,
-        "ja": null,
-        "ko": null,
-        "pt_br": "Pickleball Love Story",
-        "th": null,
-        "tr": null,
+        "id": "Kisah Cinta Pickleball",
+        "th": "เรื่องราวความรักพิกเคิลบอล",
         "vi": "Chuyện Tình Pickleball",
-        "zh_cn": null,
-        "zh_tw": null
+        "zh_cn": "匹克球爱情故事",
+        "zh_tw": "匹克球愛情故事",
+        "ja": "ピックルボール・ラブストーリー",
+        "es": "Historia de amor de Pickleball"
     }
 }
