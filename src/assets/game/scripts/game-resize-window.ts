@@ -46,6 +46,6 @@ export class GameResizeWindow extends Component {
         this.adjustResolution();
     }
 
-    private debouncedResizeWindow = this.debounce(this.resizeWindow, 100);
+    private readonly debouncedResizeWindow = this.debounce(this.resizeWindow, 100);
 
 }
